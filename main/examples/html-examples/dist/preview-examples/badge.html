@@ -1,0 +1,60 @@
+<!--
+SPDX-FileCopyrightText: 2026 Siemens AG
+
+SPDX-License-Identifier: MIT
+
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-ix-theme="classic" data-ix-color-schema="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge example</title>
+    <script type="module" crossorigin src="../assets/badge-C9pF1qdO.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/preload-helper-UZRgTS1n.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-CgUi6DzV-fQJuTF8s.js">
+    <link rel="modulepreload" crossorigin href="../assets/global-BFmC_PbI.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-DCCkv1ZQ-DZnlOMEt.js">
+    <link rel="modulepreload" crossorigin href="../assets/ix-icon.entry-CGiLGChb.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-MpHERktc.js">
+    <link rel="modulepreload" crossorigin href="../assets/init-C5YnK6N4.js">
+    <link rel="stylesheet" crossorigin href="../assets/global-BOgBuYcl.css">
+    <link rel="stylesheet" crossorigin href="../assets/badge-BDmXWw1I.css">
+  </head>
+  <body>
+    <div class="row">
+      <ix-badge type="counter" label="3" variant="danger"><ix-button aria-label="Review, 3 unread">Review</ix-button></ix-badge>
+      <ix-badge type="counter" label="1" variant="danger" enable-animation><ix-icon-button icon="info" aria-label="What's new, 1 notification"></ix-icon-button></ix-badge>
+      <ix-badge type="counter" label="9" variant="success" position="bottom-after"><ix-button aria-label="Bottom after, 9 items">Bottom after</ix-button></ix-badge>
+      <ix-badge type="dot" variant="danger"><ix-button aria-label="Messages, unread">Messages</ix-button></ix-badge>
+      <ix-badge type="status-icon" variant="warning"><ix-button aria-label="Device, warning">Device</ix-button></ix-badge>
+    </div>
+
+    <div class="row">
+      <ix-badge type="counter" label="12" variant="information"></ix-badge>
+      <ix-badge type="counter" label="99" variant="warning"></ix-badge>
+      <ix-badge type="counter" label="142" variant="accent"></ix-badge>
+      <ix-badge type="counter" label="100" variant="danger"></ix-badge>
+      <ix-badge type="counter" label="8" variant="accent" outline></ix-badge>
+      <ix-badge type="counter" label="8" variant="accent" border></ix-badge>
+      <ix-badge type="dot" variant="danger" role="img" aria-label="Unread"></ix-badge>
+      <ix-badge type="dot" variant="success" outline role="img" aria-label="Online"></ix-badge>
+      <ix-badge type="status-icon" variant="danger" role="img" aria-label="Danger"></ix-badge>
+      <ix-badge type="status-icon" variant="success" outline role="img" aria-label="Success"></ix-badge>
+    </div>
+
+    <div class="row">
+      <ix-badge type="label" label="Label" variant="danger" align-left icon="star" class="styled" tooltip-text></ix-badge>
+      <ix-badge type="label" label="Label" icon="star" class="styled-ellipsis-4" tooltip-text></ix-badge>
+      <ix-badge type="counter" label="12" variant="information" tooltip-text></ix-badge>
+      <ix-badge type="counter" label="12" variant="information" tooltip-text="Twelve notifications"></ix-badge>
+      <ix-badge type="dot" variant="danger" role="img" aria-label="Unread" tooltip-text></ix-badge>
+      <ix-badge type="dot" variant="danger" role="img" aria-label="Unread" tooltip-text="Custom tooltip text"></ix-badge>
+      <ix-badge type="status-icon" variant="warning" role="img" aria-label="Warning" tooltip-text></ix-badge>
+      <ix-badge type="status-icon" variant="warning" role="img" aria-label="Warning" tooltip-text="Custom tooltip text"></ix-badge>
+    </div>
+  </body>
+</html>

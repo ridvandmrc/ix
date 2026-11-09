@@ -1,0 +1,77 @@
+<!--
+SPDX-FileCopyrightText: 2026 Siemens AG
+
+SPDX-License-Identifier: MIT
+
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-ix-theme="classic" data-ix-color-schema="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat AI message example</title>
+    <script type="module" crossorigin src="../assets/chat-ai-message-CXuQTRX3.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/preload-helper-UZRgTS1n.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-CgUi6DzV-fQJuTF8s.js">
+    <link rel="modulepreload" crossorigin href="../assets/global-BFmC_PbI.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-DCCkv1ZQ-DZnlOMEt.js">
+    <link rel="modulepreload" crossorigin href="../assets/ix-icon.entry-CGiLGChb.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-MpHERktc.js">
+    <link rel="modulepreload" crossorigin href="../assets/init-C5YnK6N4.js">
+    <link rel="stylesheet" crossorigin href="../assets/global-BOgBuYcl.css">
+  </head>
+  <body>
+    <ix-chat class="chat-example__chat">
+      <ix-chat-ai-message>
+        <h3>Recommended maintenance actions</h3>
+        <p>
+          The compressor is operating within the expected range. Schedule the
+          next inspection during the Friday service window and keep monitoring
+          the vibration trend.
+        </p>
+        <ul>
+          <li>Review the acknowledged alarms from the last shift.</li>
+          <li>
+            Confirm that spare parts are available before the service window.
+          </li>
+          <li>Share the summary with the maintenance lead.</li>
+        </ul>
+        <ix-icon-button
+          slot="actions"
+          aria-label="Copy response"
+          icon="copy"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-icon-button
+          slot="actions"
+          aria-label="Helpful response"
+          icon="thumb-up"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-icon-button
+          slot="actions"
+          aria-label="Not helpful response"
+          icon="thumb-down"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-icon-button
+          slot="actions"
+          aria-label="Regenerate response"
+          icon="refresh"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-chip slot="sources" icon="globe" outline variant="neutral">
+          Sources
+        </ix-chip>
+      </ix-chat-ai-message>
+    </ix-chat>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!--
+SPDX-FileCopyrightText: 2026 Siemens AG
+
+SPDX-License-Identifier: MIT
+
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-ix-theme="classic" data-ix-color-schema="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat input example</title>
+    <script type="module" crossorigin src="../assets/chat-input-CosdkQyH.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/preload-helper-UZRgTS1n.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-CgUi6DzV-fQJuTF8s.js">
+    <link rel="modulepreload" crossorigin href="../assets/global-BFmC_PbI.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-DCCkv1ZQ-DZnlOMEt.js">
+    <link rel="modulepreload" crossorigin href="../assets/ix-icon.entry-CGiLGChb.js">
+    <link rel="modulepreload" crossorigin href="../assets/index-MpHERktc.js">
+    <link rel="modulepreload" crossorigin href="../assets/init-C5YnK6N4.js">
+    <link rel="stylesheet" crossorigin href="../assets/global-BOgBuYcl.css">
+  </head>
+  <body>
+    <ix-chat class="chat-example__chat">
+      <ix-chat-input
+        slot="prompt"
+        value="Check open alarms and suggest the next maintenance step."
+        placeholder="Ask about asset status..."
+        textarea-label="Service assistant prompt"
+        max-length="180"
+        character-limit="180"
+      >
+        <ix-chat-attachment
+          slot="attachments"
+          file-name="shift_report.pdf"
+          icon="pdf-document"
+        ></ix-chat-attachment>
+        <ix-icon-button
+          slot="start"
+          aria-label="Attach file"
+          icon="plus"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-icon-button
+          slot="end"
+          aria-label="Add image"
+          icon="image"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+        <ix-icon-button
+          slot="end"
+          aria-label="Record voice input"
+          icon="microphone"
+          size="24"
+          variant="subtle-tertiary"
+        ></ix-icon-button>
+      </ix-chat-input>
+    </ix-chat>
+
+  </body>
+</html>
